@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Farmable XP Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Growtopia XP Calculator</h1>
+
+      <label for="selectOption">Pilih Farmable:</label>
+      <select id="selectOption">
+        <option value="laserGrid">Laser Grid</option>
+        <option value="chandelier">Chandelier</option>
+        <option value="htb">High Tech Block</option>
+        <option value="scstone">Sorcerer Stone</option>
+        <option value="mbell">Magic Bell</option>
+      </select>
+
+      <label for="quantity">Jumlah Block:</label>
+      <input type="number" id="quantity" min="1" value="1" />
+
+      <div id="shortcutButtons">
+        <button onclick="setShortcutValue(100)">100</button>
+        <button onclick="setShortcutValue(200)">200</button>
+        <button onclick="setShortcutValue(400)">400</button>
+        <button onclick="setShortcutValue(1000)">1000</button>
+        <button onclick="setShortcutValue(2000)">2000</button>
+        <button onclick="setShortcutValue(5000)">5000</button>
+        <button onclick="setShortcutValue(10000)">10000</button>
+    </div>
+
+      <button Onclick="calculateXP()">Hitung XP</button>
+
+      <p id="result">Total XP: 0</p>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
